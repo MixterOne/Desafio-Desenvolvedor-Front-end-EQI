@@ -3,10 +3,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
-#main-contents{
-    background: #afafaf;
+#mainContents{
+    padding: 0px 30px;
+    background: #e0e0e0;
     width: 95%;
     height: 90vh;
 }
