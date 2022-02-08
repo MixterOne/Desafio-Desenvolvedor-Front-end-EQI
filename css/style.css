@@ -63,6 +63,7 @@ body{
     font-size: 0.9em;
     font-weight: 900;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .simu{
