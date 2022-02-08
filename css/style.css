@@ -10,10 +10,183 @@ body{
     padding: 0px 30px;
     background: #e0e0e0;
     width: 95%;
-    height: 90vh;
+    height: 100vh;
 }
 
 .title-Prin{
     text-align: center;
     font-family: sans-serif;
 }
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 10px;
+}
+
+.contentsPrincipal{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.leftContents{
+    width: 200px;
+    margin-right: 60px;
+}
+
+.rightContents{
+    width: 240px;
+}
+
+
+/*FORMULARIO E SEUS BUTÕES*/
+.rendi{
+    display: flex;
+    align-items: center;
+}
+
+.rendiTitle{
+    margin-right: 100px;
+}
+
+.tipInd{
+    margin-left: 60px;
+}
+
+.btns{
+    width: 240px;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 0.9em;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+.simu{
+    background-color: #707070;
+    color: #000;
+    width: 260px;
+    border: none;
+}
+
+/*BUTÕES DA ESQUERDAAA---- */
+
+
+.btnsBL{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.buttonsB{
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(255, 142, 100);
+    border-radius: 10px 0px 0px 10px;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsL{
+    width: 50%;
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*BUTÕES DA DIREITAAA---- */
+
+.btnsBR{
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.buttonsPr{
+    width: 33.33%;
+    padding:20px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.buttonsP{
+    width: 33.33%;
+    padding:20px;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(255, 142, 100);
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonsF{
+    width: 33.33%;
+    padding: 20px 10px;
+    text-decoration: none;
+    border-radius: 0px 0px 10px 10px;
+    color: #000;
+}
+
+/*IPUTSSS*/
+
+.input{
+    position: relative;
+}
+
+.forms{
+    width: 100%;
+    padding: 16px 0;
+    margin-bottom: 20px;
+    border:none;
+    border-bottom: 1px solid #707070;
+    background-color: transparent;
+    outline: none;
+
+    /* text */
+    color: #000;
+    font-size: 1em;
+}
+
+
+.forms ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: rgba(27, 27, 27, 0.836) ;
+
+    transition: .4s;
+}
+
+.forms:focus ~ label,
+.forms:valid ~ label {
+    transform: translateY(-18px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
