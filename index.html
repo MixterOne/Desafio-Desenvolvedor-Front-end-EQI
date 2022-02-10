@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <script src="https://kit.fontawesome.com/8a88a8698f.js" crossorigin="anonymous"></script>
     <script src="JS/script.js" defer></script>
 </head>
+
 <body>
     <div id="mainContents">
         <h1 class="title-Prin">Simulador de Investimentos</h1>
@@ -24,71 +26,64 @@
             </div>
 
             <div class="contentsPrincipal">
-                
+
                 <div class="leftContents">
+
                     <div class="btnsBL">
                         <a class="buttonsB" href="#">✓Bruto</a>
-                        <a class="buttonsL" href="#">Líquido</a>  
+                        <a class="buttonsL" href="#">Líquido</a>
                     </div>
+
                     <form class="formLeft">
                         <div class="input">
                             <input class="forms" id="realLeft" required type="text" />
-                            <label>Aporte Inicial</label>
-                            <span class="errorLeft"></span>
-                          </div>
-                      
-                      
-                          <div class="input">
+                            <label class="aporteLeft">Aporte Inicial</label>
+                            <span class="error errorLeft"></span>
+                        </div>
+
+                        <div class="input">
                             <input class="forms" required type="text" />
                             <label>Prazo (em meses)</label>
                             <span class="error"></span>
-                          </div>
-    
-                          <div class="input">
+                        </div>
+
+                        <div class="input">
                             <input class="forms" required type="text" />
                             <label>IPCA (ao ano)</label>
                             <span class="error"></span>
-                          </div>
-    
-                          
+                        </div>
                     </form>
-                    
                 </div>
-                
+
                 <div class="rightContents">
-                    
+
                     <div class="btnsBR">
                         <a class="buttonsPr" href="#">Pré</a>
-                        <a class="buttonsP" href="#">✓pos</a>  
+                        <a class="buttonsP" href="#">✓pos</a>
                         <a class="buttonsF" href="#">Fixado</a>
                     </div>
                     <form class="formRight">
                         <div class="input">
                             <input class="forms" id="realRight" required type="text" />
-                            <label>Aporte Mensal</label>
-                            <span class="error"></span>
-                          </div>
-                      
-                      
-                          <div class="input">
+                            <label class="aporteRight">Aporte Mensal</label>
+                            <span class="error errorRight"></span>
+                        </div>
+
+                        <div class="input">
                             <input class="forms" required type="text" />
                             <label>Rentabilidade</label>
                             <span class="error"></span>
-                          </div>
-    
-                          <div class="input">
+                        </div>
+
+                        <div class="input">
                             <input class="forms" required type="text" />
                             <label>CDI (ao ano)</label>
                             <span class="error"></span>
-                          </div>
-    
-                          
+                        </div>
                     </form>
-                    
                 </div>
-
-                
             </div>
+            
             <div class="footer_btns">
                 <button type="submit" class="btns">Limpar Campos</button>
                 <button type="submit" class="btns simu">Simular</button>
