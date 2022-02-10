@@ -8,6 +8,7 @@
     <title>Calculadora de Investimentos EQI</title>
 
     <script src="https://kit.fontawesome.com/8a88a8698f.js" crossorigin="anonymous"></script>
+    <script src="JS/script.js" defer></script>
 </head>
 <body>
     <div id="mainContents">
@@ -31,9 +32,9 @@
                     </div>
                     <form class="formLeft">
                         <div class="input">
-                            <input class="forms" required type="text" />
+                            <input class="forms" id="realLeft" required type="text" />
                             <label>Aporte Inicial</label>
-                            <span class="error"></span>
+                            <span class="errorLeft"></span>
                           </div>
                       
                       
@@ -63,7 +64,7 @@
                     </div>
                     <form class="formRight">
                         <div class="input">
-                            <input class="forms" required type="text" />
+                            <input class="forms" id="realRight" required type="text" />
                             <label>Aporte Mensal</label>
                             <span class="error"></span>
                           </div>
@@ -95,4 +96,5 @@
         </div>
     </div>
 </body>
+
 </html>
