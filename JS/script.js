@@ -1,98 +1,60 @@
-/*FUNÇÃO DE CONVERSÃO DO APORTE INICIAL*/
-
-let realLeft = document.getElementById('realLeft').value;
-
 function convertValor (valor) {
 	let valorSemCurrency = valor.replace(/r\$\s?/i, '');
 	return isNaN(valorSemCurrency) ? 0 : parseFloat(valorSemCurrency);
 }
 
 
-/* 
-  realLeft.addEventListener("blur", function(){
+
+
+function change () {
+    let realLeft = document.getElementById('realLeft').value;
+      /*ERROS NOS INPUTS------- */
   
-  let valor = convertValor(this.value);
-  let valor2 = valor.toLocaleString("pt-br", {
-	style: "currency",
-	currency: "BRL"
-});
-
-*/
-
-  /* 
-    CHAT:
-    nem pra ter avisado em
-    tenta agora, tenho fé agora
-   
-    cara ta dando que nn ta definido
-    panErrorLeft.style.color = 'red'
-        aporteErrorLeft.style.color = 'red'
-    não apaga, deixa eu terminar 
-
-  CARA TA CARREGANDO INFINITAMENTE kkkkkkk ACHO QUE É O LOOP
-
-  como assim carregando infinitamente?
-
-  fica rodando a bolinha de carregando a pagina sabe? ae nn me deixar clicar em nd
-  tem nada haver não, só verifica lá nos input, coloca uma string e depois um número
-  se fica vermelho e verde  
-  
-  ae nn me deixar clicar em nd
-  ae nn me deixar clicar em nd
-  ae nn me deixar clicar em nd
-  ae nn me deixar clicar em nd
-
-  nem sei o que vc colocou ali em baixo, du nada começou a escreve sem falar nada, vou tentar terminar ali
-  e vc verifica
-
-  é pq no console ta dizendo que nn tinha sido definido
-  
-  testaspanErrorLeft.style.color = 'red'
-        aporteErrorLeft.style.color = 'red' a
-
-
-        testa a porra do código agora
-        continua carrega
-  */
-
-        
-
-    let n = 2;
-    let newvalue = Number(realLeft);
-    while( n > 1 ){
       let spanErrorLeft = document.querySelector('.errorLeft');
       let aporteErrorLeft = document.querySelector('.aporteLeft');
+      
+       
+        if (isNaN(realLeft) == true || realLeft == "") {
+          spanErrorLeft.style.color = 'red'
+          spanErrorLeft.innerHTML = 'Aporte deve ser um número!'
+          aporteErrorLeft.style.color = 'red'
+        }
+        else {
+          spanErrorLeft.style.display = 'none'
+          aporteErrorLeft.style.color = 'rgba(27, 27, 27, 0.836) '
+        }
 
-      if (newvalue != Number) {
-        spanErrorLeft.style.color = 'red'
-        aporteErrorLeft.style.color = 'red'
-      }
-      else {
-        spanErrorLeft.style.color = 'green'
-        aporteErrorLeft.style.color = 'green'
-      }
-    }
+}
+
+function change2(){
+  /*FUNÇÃO DE CONVERSÃO DO APORTE MENSAL*/
+
+let realRight = document.getElementById('realRight').value;
+
+/*ERROS NOS INPUTS------- */
+  
+let spanErrorRight = document.querySelector('.errorRight');
+let aporteErrorRight = document.querySelector('.aporteRight');
+
+ 
+  if (isNaN(realRight) == true || realRight == "") {
+    spanErrorRight.style.color = 'red'
+    spanErrorRight.innerHTML = 'Aporte deve ser um número!'
+    aporteErrorRight.style.color = 'red'
+  }
+  else {
+    spanErrorRight.style.display = 'none'
+    aporteErrorRight.style.color = 'rgba(27, 27, 27, 0.836) '
+  }
+}
+        
 
 
-
-  /*ERROS NOS INPUTS------- */
 
   
 
 
-  // if(realLeft != Number){
-  //  spanErrorLeft.style.color = 'red'
-//  aporteErrorLeft.style.color = 'red'
-   // spanErrorLeft.innerHTML = 'Aporte deve ser um número!'
- // }
-
-  
-
-
-/*FUNÇÃO DE CONVERSÃO DO APORTE MENSAL*/
-
-
-let realRight = document.getElementById('realRight');
+/*
 
 function convertValor (valor) {
 	let valorSemCurrency = valor.replace(/r\$\s?/i, '');
@@ -108,7 +70,7 @@ realRight.addEventListener("blur", function() {
   });
   realRight.value = valor2;
 
-  /*ERROS NOS INPUTS------- */
+  /*ERROS NOS INPUTS------- 
 
   let spanErrorRight = document.querySelector('.errorRight');
   let aporteErrorRight = document.querySelector('.aporteRight')
@@ -122,7 +84,7 @@ realRight.addEventListener("blur", function() {
     aporteErrorRight.style.color = 'red'
   }
 })
-
+*/
 
 
 
