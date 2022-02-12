@@ -48,50 +48,6 @@ let aporteErrorRight = document.querySelector('.aporteRight');
   }
 }
         
-
-
-
-  
-
-
-/*
-
-function convertValor (valor) {
-	let valorSemCurrency = valor.replace(/r\$\s?/i, '');
-	return isNaN(valorSemCurrency) ? 0 : parseFloat(valorSemCurrency);
-}
-
-realRight.addEventListener("blur", function() {
-  
-  let valor = convertValor(this.value);
-  let valor2 = valor.toLocaleString("pt-br", {
-	style: "currency",
-	currency: "BRL"
-  });
-  realRight.value = valor2;
-
-  /*ERROS NOS INPUTS------- 
-
-  let spanErrorRight = document.querySelector('.errorRight');
-  let aporteErrorRight = document.querySelector('.aporteRight')
-
-  if(realRight.value != Number){
-    spanErrorRight.style.color = 'red'
-    aporteErrorRight.style.color = 'red'
-    spanErrorRight.innerHTML = 'Aporte deve ser um número!'
-  }else{
-    spanErrorRight.style.color = 'red'
-    aporteErrorRight.style.color = 'red'
-  }
-})
-*/
-
-
-
-
-
-  
-
 //FUNÇÃO PARA CHEGAR SE OS INPUT ESTÃO PREENCHIDOS E VALIDAR O BUTTON-------
 
 function checkInputs(inputs) {
