@@ -1,20 +1,20 @@
-function fazGet(url){
+function fazGet(url) {
     let request = new XMLHttpRequest()
     request.open('GET', url, false)
     request.send()
     return request.responseText
 }
 
-function fazGet2(url){
+function fazGet(url) {
     let request = new XMLHttpRequest()
     request.open('GET', url, false)
     request.send()
     return request.responseText
 }
 
-function CriaBloco(simulacoes){
-    blocos = document.getElementById('blocos')
-    blocos.innerHTML += `
+function CriaBloco(simulacoes) {
+    blocos = document.querySelector('.blocos')
+    blocos.innerHTML = `
         <div class= 'bloco'>
             <h4>Valor final Bruto<h4>
             <p>R$ ${simulacoes.valorFinalBruto}</p>
@@ -46,42 +46,22 @@ function CriaBloco(simulacoes){
         </div>
     
     `
-return blocos
 
+    return blocos
 }
 
-function indica(indicadores){
-    let inputIndi = document.querySelector('.ipcaAoAno')
-    inputIndi.innerHTML += `<p>${indicadores.nome}</p>`
-}
-
-function main(){
+function main() {
     let data = fazGet('http://localhost:3000/simulacoes')
-    
     let simulacoes = JSON.parse(data);
+    let blocosDiv = document.getElementById('blocosContainer')
+    let blocos = document.createElement('div')
+    blocos.classList.add('blocos')
 
-    let blocosDiv = document.getElementById('blocos')
-
-
+    blocosDiv.appendChild(blocos)
     simulacoes.forEach(element => {
         let blocoSimu = CriaBloco(element);
         blocosDiv.appendChild(blocoSimu)
     });
 
-    
-
 }
 
-
-
-/*
-let dataIndi =  fazGet2('http://localhost:3000/indicadores') 
-let indicadores = JSON.parse(dataIndi);
-    let inputPrinc = document.querySelector('.ipcaAoAno')
-    
-
-indicadores.forEach(element => {
-        let input = indica(element);
-        inputPrinc.appendChild(input)
-    })
-*/

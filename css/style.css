@@ -40,7 +40,6 @@ body{
     width: 240px;
 }
 
-
 /*FORMULARIO E SEUS BUTÕES*/
 .rendi{
     display: flex;
@@ -190,8 +189,7 @@ body{
 }
 
 /*DIVS DAS API---*/
-
-#blocos{
+.blocos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
