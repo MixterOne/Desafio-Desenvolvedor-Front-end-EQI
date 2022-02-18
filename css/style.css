@@ -189,3 +189,28 @@ body{
     letter-spacing: 0.1em;
 }
 
+/*DIVS DAS API---*/
+
+#blocos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    padding: 0px 15px;
+    line-height: px;
+    background: #e2e2e2;
+    margin: 10px;
+    box-shadow: 0 0 1em rgba(128, 128, 128, 0.418);
+}
+
+.bloco p{
+    margin: -10px auto;
+}
